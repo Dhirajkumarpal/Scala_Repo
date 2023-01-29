@@ -1,0 +1,62 @@
+//problem no1 week 8 assignment
+var inp=scala.io.StdIn.readLine()
+var n=inp.toInt
+var inp1=scala.io.StdIn.readLine()
+println(inp1)
+var elementarray=inp1.split(" ")
+
+var count:Int=0
+for(x<-elementarray){
+    println(x)
+    println("hi")
+     var y:Int=x.toInt
+    var sqrt:Long =  math.sqrt(y).toLong;
+  if (sqrt * sqrt == y){
+      count=count+1
+  }
+   
+    
+}
+print(count)
+
+
+//problem no2 week 8 assignment
+var inp=scala.io.StdIn.readLine()
+var imparray1=inp.split(" ")
+var var1:Int=imparray1(0).toInt
+var var2:Int=imparray1(1).toInt
+
+
+var inp1=scala.io.StdIn.readLine()
+println(inp1)
+var elementarray=inp1.split(" ")
+var count:Int=0
+for(x<-elementarray){
+  
+  
+     var y:Int=x.toInt
+    
+  if (y<var2){
+      count=count+1
+  }
+   
+    
+}
+print(count)
+
+
+//problem 3 week 8 assignment
+var inp=scala.io.StdIn.readLine()
+var reverse1:String=inp.reverse
+//solution for reversing string
+print(s"Reverse string : $reverse1\n")
+
+var inparray1=inp.split(" ")
+for(x<- 1 to inparray1.length){
+    println(s"$x")
+    inparray1(x-1)=inparray1(x-1).reverse
+    println(inparray1(x-1))
+    
+}
+//solution of reversing each word of string
+println(inparray1.mkString(" "))
